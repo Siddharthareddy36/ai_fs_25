@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Horizontal Flex Halves</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: row; /* horizontal split */
+      height: 100%;
+    }
+
+    .half {
+      flex: 1;
+      border: 2px solid black;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="half">Left Half</div>
+    <div class="half">Right Half</div>
+  </div>
+</body>
+</html>
