@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  background-color: #007BFF;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.container {
+  display: flex;
+  margin-top: 60px; 
+  min-height: calc(100vh - 100px); 
+}
+
+.sidebar {
+  width: 200px;
+  background-color:red;
+  padding: 20px;
+  border-right: 1px solid #ccc;
+  justify-content: center;
+  text-align: center;
+}
+
+.content {
+  flex: 1;
+  padding: 70px;
+  text-align: center;
+  justify-content: center;
+  background-color: white;
+}
+
+.footer {
+  height: 40px;
+  background-color: #f0c712d5;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Layout Example</title>
+  
+</head>
+<body>
+  <header class="header">Header</header>
+
+  <div class="container">
+    <aside class="sidebar">Sidebar</aside>
+    <main class="content">Content</main>
+  </div>
+
+  <footer class="footer">Footer</footer>
+</body>
+</html>
