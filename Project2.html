@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  font-family: sans-serif;
+}
+
+/* Fixed header and footer */
+header {
+  background-color: dodgerblue;
+  color: white;
+  flex: 20%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  height: 80px;
+}
+
+footer {
+  background-color: rgb(201, 95, 95);
+  color: white;
+  text-align: center;
+  padding: 20px;
+  height: 60px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+/* Layout container */
+.container {
+  display: flex;
+  height: calc(100vh - 120px); 
+}
+
+/* Sidebar */
+aside {
+  width: 20%;
+  background-color: rgba(131, 236, 19, 0.807);
+  color: black;
+  padding: 20px;
+  flex: auto;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  
+}
+
+/* Main content area */
+main {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(231, 199, 199, 0.732);
+}
+
+/* Centered content box */
+.content {
+  text-align: center;
+  font-size: 18px;
+}
+
+    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Layout Example</title>
+</head>
+<body>
+  <header>Header</header>
+
+  <div class="container">
+    <aside>Sidebar</aside>
+    <main>
+      <section class="content">Content</section>
+    </main>
+  </div>
+
+  <footer>Footer</footer>
+</body>
+</html>
